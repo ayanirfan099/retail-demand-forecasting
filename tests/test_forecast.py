@@ -37,6 +37,19 @@ class ForecastTests(unittest.TestCase):
         with self.assertRaises(ValueError):
             make_features(bad)
 
+    def test_optional_plot_rows_reconstruct_reported_errors_and_preserve_default(self):
+        standard = evaluate_sales(self.frame, test_days=14)
+        detailed = evaluate_sales(self.frame, test_days=14, include_predictions=True)
+        rows = detailed.pop("predictions")
+        self.assertEqual(detailed, standard)
+        self.assertEqual(len(rows), standard["model_metrics"]["n"])
+        self.assertTrue(all(row["date"] > standard["train_end"] for row in rows))
+        for column, metric_key in [("prediction", "model_metrics"),
+                                   ("seasonal_naive_lag_7", "seasonal_naive_lag_7_metrics")]:
+            errors = regression_metrics([row["sales"] for row in rows], [row[column] for row in rows])
+            self.assertAlmostEqual(errors["mae"], standard[metric_key]["mae"])
+            self.assertAlmostEqual(errors["rmse"], standard[metric_key]["rmse"])
+
     def test_metric_requires_matching_nonempty_arrays(self):
         with self.assertRaises(ValueError):
             regression_metrics([], [])

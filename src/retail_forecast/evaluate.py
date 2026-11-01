@@ -18,7 +18,7 @@ def _mase_scale(train: pd.DataFrame) -> float | None:
     return float(seasonal_errors.mean())
 
 
-def evaluate_sales(frame: pd.DataFrame, *, test_days: int = 28, model: str = "hist_gradient_boosting"):
+def evaluate_sales(frame: pd.DataFrame, *, test_days: int = 28, model: str = "hist_gradient_boosting", include_predictions: bool = False):
     """Train before test_start, then score test days in a rolling one-day-ahead setting.
 
     For a test date, lags may use actual sales from earlier dates in the test window,
@@ -55,7 +55,7 @@ def evaluate_sales(frame: pd.DataFrame, *, test_days: int = 28, model: str = "hi
     prediction = np.maximum(0, pipeline.predict(test[FEATURES]))
     baseline_prediction = np.maximum(0, test["lag_7"].to_numpy(dtype=float))
     scale = _mase_scale(raw[raw["date"] < test_start])
-    return {
+    report = {
         "model": model,
         "forecast_mode": "rolling one-day-ahead; model fit once before test window",
         "train_start": str(train["date"].min().date()),
@@ -66,3 +66,10 @@ def evaluate_sales(frame: pd.DataFrame, *, test_days: int = 28, model: str = "hi
         "model_metrics": regression_metrics(test["sales"], prediction, mase_scale=scale),
         "seasonal_naive_lag_7_metrics": regression_metrics(test["sales"], baseline_prediction, mase_scale=scale),
     }
+    if include_predictions:
+        rows = test[["date", "store", "item", "sales"]].copy()
+        rows["date"] = rows["date"].dt.strftime("%Y-%m-%d")
+        rows["prediction"] = prediction
+        rows["seasonal_naive_lag_7"] = baseline_prediction
+        report["predictions"] = rows.to_dict(orient="records")
+    return report

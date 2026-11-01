@@ -1,4 +1,4 @@
-# Retail Demand Forecasting
+# Retail Demand Forecasting with Leakage-Aware Evaluation
 
 A leakage-aware forecasting project for daily store/item demand. It compares a machine-learning model with a seasonal-naive baseline and evaluates next-day predictions with a chronological holdout.
 

@@ -1,0 +1,922 @@
+{
+  "model": "hist_gradient_boosting",
+  "forecast_mode": "rolling one-day-ahead; model fit once before test window",
+  "train_start": "2024-01-15",
+  "train_end": "2024-05-31",
+  "test_start": "2024-06-01",
+  "test_end": "2024-06-28",
+  "series": 4,
+  "model_metrics": {
+    "n": 112,
+    "mae": 2.6272846478911966,
+    "rmse": 3.3654507765090416,
+    "wape": 0.10213671661361125,
+    "mase": 0.8618920224982433
+  },
+  "seasonal_naive_lag_7_metrics": {
+    "n": 112,
+    "mae": 3.1160714285714284,
+    "rmse": 3.883343551999635,
+    "wape": 0.12113849357861854,
+    "mase": 1.0222406270200388
+  },
+  "predictions": [
+    {
+      "date": "2024-06-01",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 31,
+      "prediction": 34.866214125609545,
+      "seasonal_naive_lag_7": 37.0
+    },
+    {
+      "date": "2024-06-02",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 28,
+      "prediction": 33.661827312376346,
+      "seasonal_naive_lag_7": 30.0
+    },
+    {
+      "date": "2024-06-03",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 30,
+      "prediction": 28.87262517073285,
+      "seasonal_naive_lag_7": 30.0
+    },
+    {
+      "date": "2024-06-04",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 30,
+      "prediction": 30.738193461687246,
+      "seasonal_naive_lag_7": 27.0
+    },
+    {
+      "date": "2024-06-05",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 29,
+      "prediction": 27.095868687404387,
+      "seasonal_naive_lag_7": 28.0
+    },
+    {
+      "date": "2024-06-06",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 27,
+      "prediction": 28.258191836996502,
+      "seasonal_naive_lag_7": 28.0
+    },
+    {
+      "date": "2024-06-07",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 35,
+      "prediction": 35.252066579475006,
+      "seasonal_naive_lag_7": 34.0
+    },
+    {
+      "date": "2024-06-08",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 35,
+      "prediction": 33.51165738424373,
+      "seasonal_naive_lag_7": 31.0
+    },
+    {
+      "date": "2024-06-09",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 33,
+      "prediction": 29.524142845226063,
+      "seasonal_naive_lag_7": 28.0
+    },
+    {
+      "date": "2024-06-10",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 29,
+      "prediction": 27.27062187927939,
+      "seasonal_naive_lag_7": 30.0
+    },
+    {
+      "date": "2024-06-11",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 32,
+      "prediction": 26.558402381755908,
+      "seasonal_naive_lag_7": 30.0
+    },
+    {
+      "date": "2024-06-12",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 26,
+      "prediction": 25.832947583194194,
+      "seasonal_naive_lag_7": 29.0
+    },
+    {
+      "date": "2024-06-13",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 34,
+      "prediction": 28.44027337630908,
+      "seasonal_naive_lag_7": 27.0
+    },
+    {
+      "date": "2024-06-14",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 31,
+      "prediction": 32.915930558755804,
+      "seasonal_naive_lag_7": 35.0
+    },
+    {
+      "date": "2024-06-15",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 34,
+      "prediction": 33.634484819336976,
+      "seasonal_naive_lag_7": 35.0
+    },
+    {
+      "date": "2024-06-16",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 29,
+      "prediction": 29.944980488155313,
+      "seasonal_naive_lag_7": 33.0
+    },
+    {
+      "date": "2024-06-17",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 28,
+      "prediction": 27.398946009307235,
+      "seasonal_naive_lag_7": 29.0
+    },
+    {
+      "date": "2024-06-18",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 29,
+      "prediction": 29.05278334854504,
+      "seasonal_naive_lag_7": 32.0
+    },
+    {
+      "date": "2024-06-19",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 28,
+      "prediction": 29.86789123718394,
+      "seasonal_naive_lag_7": 26.0
+    },
+    {
+      "date": "2024-06-20",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 30,
+      "prediction": 28.59637457683628,
+      "seasonal_naive_lag_7": 34.0
+    },
+    {
+      "date": "2024-06-21",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 35,
+      "prediction": 34.93977382474724,
+      "seasonal_naive_lag_7": 31.0
+    },
+    {
+      "date": "2024-06-22",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 38,
+      "prediction": 33.038805522076686,
+      "seasonal_naive_lag_7": 34.0
+    },
+    {
+      "date": "2024-06-23",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 33,
+      "prediction": 28.576250607336757,
+      "seasonal_naive_lag_7": 29.0
+    },
+    {
+      "date": "2024-06-24",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 34,
+      "prediction": 26.050645428339653,
+      "seasonal_naive_lag_7": 28.0
+    },
+    {
+      "date": "2024-06-25",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 31,
+      "prediction": 26.01468216645017,
+      "seasonal_naive_lag_7": 29.0
+    },
+    {
+      "date": "2024-06-26",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 28,
+      "prediction": 25.067136956357984,
+      "seasonal_naive_lag_7": 28.0
+    },
+    {
+      "date": "2024-06-27",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 36,
+      "prediction": 27.5561779583749,
+      "seasonal_naive_lag_7": 30.0
+    },
+    {
+      "date": "2024-06-28",
+      "store": "store-01",
+      "item": "item-A",
+      "sales": 36,
+      "prediction": 31.82141791906849,
+      "seasonal_naive_lag_7": 35.0
+    },
+    {
+      "date": "2024-06-01",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 21,
+      "prediction": 22.436636721680163,
+      "seasonal_naive_lag_7": 23.0
+    },
+    {
+      "date": "2024-06-02",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 17,
+      "prediction": 17.909799706559777,
+      "seasonal_naive_lag_7": 17.0
+    },
+    {
+      "date": "2024-06-03",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 19,
+      "prediction": 18.622712973662434,
+      "seasonal_naive_lag_7": 20.0
+    },
+    {
+      "date": "2024-06-04",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 22,
+      "prediction": 16.378229231447623,
+      "seasonal_naive_lag_7": 13.0
+    },
+    {
+      "date": "2024-06-05",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 18,
+      "prediction": 16.410878194065926,
+      "seasonal_naive_lag_7": 15.0
+    },
+    {
+      "date": "2024-06-06",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 21,
+      "prediction": 16.60196495125082,
+      "seasonal_naive_lag_7": 21.0
+    },
+    {
+      "date": "2024-06-07",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 25,
+      "prediction": 20.682755863339633,
+      "seasonal_naive_lag_7": 21.0
+    },
+    {
+      "date": "2024-06-08",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 22,
+      "prediction": 21.525169187521428,
+      "seasonal_naive_lag_7": 21.0
+    },
+    {
+      "date": "2024-06-09",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 23,
+      "prediction": 17.493762409973247,
+      "seasonal_naive_lag_7": 17.0
+    },
+    {
+      "date": "2024-06-10",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 21,
+      "prediction": 16.762828912221426,
+      "seasonal_naive_lag_7": 19.0
+    },
+    {
+      "date": "2024-06-11",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 18,
+      "prediction": 17.243567443138833,
+      "seasonal_naive_lag_7": 22.0
+    },
+    {
+      "date": "2024-06-12",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 18,
+      "prediction": 15.157294920018538,
+      "seasonal_naive_lag_7": 18.0
+    },
+    {
+      "date": "2024-06-13",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 16,
+      "prediction": 18.651090373235316,
+      "seasonal_naive_lag_7": 21.0
+    },
+    {
+      "date": "2024-06-14",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 19,
+      "prediction": 20.238261761283287,
+      "seasonal_naive_lag_7": 25.0
+    },
+    {
+      "date": "2024-06-15",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 23,
+      "prediction": 21.067391622046642,
+      "seasonal_naive_lag_7": 22.0
+    },
+    {
+      "date": "2024-06-16",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 21,
+      "prediction": 16.81174311842041,
+      "seasonal_naive_lag_7": 23.0
+    },
+    {
+      "date": "2024-06-17",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 11,
+      "prediction": 17.990831428187136,
+      "seasonal_naive_lag_7": 21.0
+    },
+    {
+      "date": "2024-06-18",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 17,
+      "prediction": 17.488164506277876,
+      "seasonal_naive_lag_7": 18.0
+    },
+    {
+      "date": "2024-06-19",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 24,
+      "prediction": 17.38973408159836,
+      "seasonal_naive_lag_7": 18.0
+    },
+    {
+      "date": "2024-06-20",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 23,
+      "prediction": 17.358980847204762,
+      "seasonal_naive_lag_7": 16.0
+    },
+    {
+      "date": "2024-06-21",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 22,
+      "prediction": 20.033643297907197,
+      "seasonal_naive_lag_7": 19.0
+    },
+    {
+      "date": "2024-06-22",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 22,
+      "prediction": 21.822673165281593,
+      "seasonal_naive_lag_7": 23.0
+    },
+    {
+      "date": "2024-06-23",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 23,
+      "prediction": 19.47920266512202,
+      "seasonal_naive_lag_7": 21.0
+    },
+    {
+      "date": "2024-06-24",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 17,
+      "prediction": 16.88116653175887,
+      "seasonal_naive_lag_7": 11.0
+    },
+    {
+      "date": "2024-06-25",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 19,
+      "prediction": 16.610153221084293,
+      "seasonal_naive_lag_7": 17.0
+    },
+    {
+      "date": "2024-06-26",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 17,
+      "prediction": 17.417781296698767,
+      "seasonal_naive_lag_7": 24.0
+    },
+    {
+      "date": "2024-06-27",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 21,
+      "prediction": 17.076306232981693,
+      "seasonal_naive_lag_7": 23.0
+    },
+    {
+      "date": "2024-06-28",
+      "store": "store-01",
+      "item": "item-B",
+      "sales": 25,
+      "prediction": 19.970917141780507,
+      "seasonal_naive_lag_7": 22.0
+    },
+    {
+      "date": "2024-06-01",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 33,
+      "prediction": 33.09579229448807,
+      "seasonal_naive_lag_7": 31.0
+    },
+    {
+      "date": "2024-06-02",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 30,
+      "prediction": 32.1757859924319,
+      "seasonal_naive_lag_7": 32.0
+    },
+    {
+      "date": "2024-06-03",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 27,
+      "prediction": 27.156002072459774,
+      "seasonal_naive_lag_7": 29.0
+    },
+    {
+      "date": "2024-06-04",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 32,
+      "prediction": 29.289409179417497,
+      "seasonal_naive_lag_7": 34.0
+    },
+    {
+      "date": "2024-06-05",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 30,
+      "prediction": 26.978383152506836,
+      "seasonal_naive_lag_7": 28.0
+    },
+    {
+      "date": "2024-06-06",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 27,
+      "prediction": 27.69682923914422,
+      "seasonal_naive_lag_7": 29.0
+    },
+    {
+      "date": "2024-06-07",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 35,
+      "prediction": 34.441887540985405,
+      "seasonal_naive_lag_7": 38.0
+    },
+    {
+      "date": "2024-06-08",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 32,
+      "prediction": 34.47388050256381,
+      "seasonal_naive_lag_7": 33.0
+    },
+    {
+      "date": "2024-06-09",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 32,
+      "prediction": 33.621924198008834,
+      "seasonal_naive_lag_7": 30.0
+    },
+    {
+      "date": "2024-06-10",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 27,
+      "prediction": 29.555968188999962,
+      "seasonal_naive_lag_7": 27.0
+    },
+    {
+      "date": "2024-06-11",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 36,
+      "prediction": 29.997438980036545,
+      "seasonal_naive_lag_7": 32.0
+    },
+    {
+      "date": "2024-06-12",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 36,
+      "prediction": 26.91037247470689,
+      "seasonal_naive_lag_7": 30.0
+    },
+    {
+      "date": "2024-06-13",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 25,
+      "prediction": 28.354627182603863,
+      "seasonal_naive_lag_7": 27.0
+    },
+    {
+      "date": "2024-06-14",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 36,
+      "prediction": 34.44488931950483,
+      "seasonal_naive_lag_7": 35.0
+    },
+    {
+      "date": "2024-06-15",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 33,
+      "prediction": 33.22300016941911,
+      "seasonal_naive_lag_7": 32.0
+    },
+    {
+      "date": "2024-06-16",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 28,
+      "prediction": 32.08977142475652,
+      "seasonal_naive_lag_7": 32.0
+    },
+    {
+      "date": "2024-06-17",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 27,
+      "prediction": 28.775160472124302,
+      "seasonal_naive_lag_7": 27.0
+    },
+    {
+      "date": "2024-06-18",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 34,
+      "prediction": 29.243530630956794,
+      "seasonal_naive_lag_7": 36.0
+    },
+    {
+      "date": "2024-06-19",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 25,
+      "prediction": 28.071296009580248,
+      "seasonal_naive_lag_7": 36.0
+    },
+    {
+      "date": "2024-06-20",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 34,
+      "prediction": 32.15478021578921,
+      "seasonal_naive_lag_7": 25.0
+    },
+    {
+      "date": "2024-06-21",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 31,
+      "prediction": 33.88116751020493,
+      "seasonal_naive_lag_7": 36.0
+    },
+    {
+      "date": "2024-06-22",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 37,
+      "prediction": 36.48869319001209,
+      "seasonal_naive_lag_7": 33.0
+    },
+    {
+      "date": "2024-06-23",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 30,
+      "prediction": 28.974831693378416,
+      "seasonal_naive_lag_7": 28.0
+    },
+    {
+      "date": "2024-06-24",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 29,
+      "prediction": 28.563094004495444,
+      "seasonal_naive_lag_7": 27.0
+    },
+    {
+      "date": "2024-06-25",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 28,
+      "prediction": 28.723915340948324,
+      "seasonal_naive_lag_7": 34.0
+    },
+    {
+      "date": "2024-06-26",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 30,
+      "prediction": 29.834278485574206,
+      "seasonal_naive_lag_7": 25.0
+    },
+    {
+      "date": "2024-06-27",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 31,
+      "prediction": 28.498843910533832,
+      "seasonal_naive_lag_7": 34.0
+    },
+    {
+      "date": "2024-06-28",
+      "store": "store-02",
+      "item": "item-A",
+      "sales": 39,
+      "prediction": 33.9604597980767,
+      "seasonal_naive_lag_7": 31.0
+    },
+    {
+      "date": "2024-06-01",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 22,
+      "prediction": 21.32377228532778,
+      "seasonal_naive_lag_7": 20.0
+    },
+    {
+      "date": "2024-06-02",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 16,
+      "prediction": 17.627328200887728,
+      "seasonal_naive_lag_7": 16.0
+    },
+    {
+      "date": "2024-06-03",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 18,
+      "prediction": 18.995521792656604,
+      "seasonal_naive_lag_7": 20.0
+    },
+    {
+      "date": "2024-06-04",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 24,
+      "prediction": 17.544939423516226,
+      "seasonal_naive_lag_7": 17.0
+    },
+    {
+      "date": "2024-06-05",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 19,
+      "prediction": 15.818785934348533,
+      "seasonal_naive_lag_7": 20.0
+    },
+    {
+      "date": "2024-06-06",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 21,
+      "prediction": 16.081399545069353,
+      "seasonal_naive_lag_7": 16.0
+    },
+    {
+      "date": "2024-06-07",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 24,
+      "prediction": 19.885098897099766,
+      "seasonal_naive_lag_7": 21.0
+    },
+    {
+      "date": "2024-06-08",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 21,
+      "prediction": 20.73939170205829,
+      "seasonal_naive_lag_7": 22.0
+    },
+    {
+      "date": "2024-06-09",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 16,
+      "prediction": 17.015871192311085,
+      "seasonal_naive_lag_7": 16.0
+    },
+    {
+      "date": "2024-06-10",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 21,
+      "prediction": 16.2291203001711,
+      "seasonal_naive_lag_7": 18.0
+    },
+    {
+      "date": "2024-06-11",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 18,
+      "prediction": 17.861316426002173,
+      "seasonal_naive_lag_7": 24.0
+    },
+    {
+      "date": "2024-06-12",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 20,
+      "prediction": 14.830280024111119,
+      "seasonal_naive_lag_7": 19.0
+    },
+    {
+      "date": "2024-06-13",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 17,
+      "prediction": 16.347683750833905,
+      "seasonal_naive_lag_7": 21.0
+    },
+    {
+      "date": "2024-06-14",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 20,
+      "prediction": 20.35603694758549,
+      "seasonal_naive_lag_7": 24.0
+    },
+    {
+      "date": "2024-06-15",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 25,
+      "prediction": 21.59517981869854,
+      "seasonal_naive_lag_7": 21.0
+    },
+    {
+      "date": "2024-06-16",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 19,
+      "prediction": 17.307499888717665,
+      "seasonal_naive_lag_7": 16.0
+    },
+    {
+      "date": "2024-06-17",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 15,
+      "prediction": 17.969464643272385,
+      "seasonal_naive_lag_7": 21.0
+    },
+    {
+      "date": "2024-06-18",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 20,
+      "prediction": 18.930868903676593,
+      "seasonal_naive_lag_7": 18.0
+    },
+    {
+      "date": "2024-06-19",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 22,
+      "prediction": 15.517073700119964,
+      "seasonal_naive_lag_7": 20.0
+    },
+    {
+      "date": "2024-06-20",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 19,
+      "prediction": 16.677971336024093,
+      "seasonal_naive_lag_7": 17.0
+    },
+    {
+      "date": "2024-06-21",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 24,
+      "prediction": 20.855129726301517,
+      "seasonal_naive_lag_7": 20.0
+    },
+    {
+      "date": "2024-06-22",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 23,
+      "prediction": 21.057358587547377,
+      "seasonal_naive_lag_7": 25.0
+    },
+    {
+      "date": "2024-06-23",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 18,
+      "prediction": 16.12780010021035,
+      "seasonal_naive_lag_7": 19.0
+    },
+    {
+      "date": "2024-06-24",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 20,
+      "prediction": 17.641174585765985,
+      "seasonal_naive_lag_7": 15.0
+    },
+    {
+      "date": "2024-06-25",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 22,
+      "prediction": 16.779653240403157,
+      "seasonal_naive_lag_7": 20.0
+    },
+    {
+      "date": "2024-06-26",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 19,
+      "prediction": 18.568002079682017,
+      "seasonal_naive_lag_7": 22.0
+    },
+    {
+      "date": "2024-06-27",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 18,
+      "prediction": 15.778997966804647,
+      "seasonal_naive_lag_7": 19.0
+    },
+    {
+      "date": "2024-06-28",
+      "store": "store-02",
+      "item": "item-B",
+      "sales": 22,
+      "prediction": 19.83240564667118,
+      "seasonal_naive_lag_7": 24.0
+    }
+  ],
+  "dataset": "Bundled synthetic daily sales; software smoke only, not a public retail benchmark"
+}

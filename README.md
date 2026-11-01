@@ -2,6 +2,13 @@
 
 A leakage-aware forecasting project for daily store/item demand. It compares a machine-learning model with a seasonal-naive baseline and evaluates next-day predictions with a chronological holdout.
 
+[![CI](https://github.com/ayanirfan099/retail-demand-forecasting/actions/workflows/tests.yml/badge.svg)](https://github.com/ayanirfan099/retail-demand-forecasting/actions/workflows/tests.yml) ![Python 3.12 CI](https://img.shields.io/badge/Python-3.12_CI-3776AB)
+
+
+![Executed synthetic next-day forecasts and residual distribution](reports/synthetic-diagnostics.png)
+
+The plot shows actual output from the bundled synthetic data, with a lag-7 baseline. It is a software demonstration, not a public retail benchmark. Reproduce with `python -m pip install matplotlib`, then `PYTHONPATH=src python scripts/plot_demo.py`. [Exact predictions, time split and metrics](reports/synthetic-diagnostics.json). The optional `include_predictions=True` evaluator argument exposes those same held-out rows; default reports are unchanged.
+
 ## Forecasting question
 
 Given each store's and item's recorded sales through yesterday, how accurately can we forecast today's demand? The evaluation uses a rolling one-day-ahead setup: the model is fitted once before the test window, while the previous day's actual demand is available when producing each later daily forecast. This mirrors a daily reforecasting process and is different from a fixed multi-week forecast made all at once.
